@@ -8,7 +8,8 @@ import (
 )
 
 var (
-	query = flag.String("q", "", "query")
+	query    = flag.String("q", "", "query")
+	fromFile = flag.String("f", "", "specify file to query")
 )
 
 func main() {
@@ -18,4 +19,8 @@ func main() {
 		return
 	}
 
+	// 从文件读取
+	if *fromFile != "" {
+
+	}
 }
